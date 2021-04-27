@@ -1,50 +1,48 @@
 package com.crm.qa.testcases;
 
-import org.testng.Assert;
+import org.junit.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.crm.qa.base.TestBase;
-import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
-import com.crm.qa.util.TestUtil;
 
-public class HomePageTest extends TestBase{
-	LoginPage loginPage;
-	TestUtil testUtil;
-	ContactsPage contactsPage;
+
+public class HomePageTest extends TestBase {
 	HomePage homePage;
 	
-	
-	
 	public HomePageTest() {
-		super();    //base class constructor will be called and properties will be initialized
+		super();
 	}
 	
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		 loginPage= new LoginPage();    //so i can access login page class methods
-		 testUtil= new TestUtil();
-		 contactsPage= new ContactsPage();
-		 homePage= new HomePage();
-		 homePage= loginPage.clickonLoginLink();
+		homePage= new HomePage();
 	}
-	
 	
 	@Test(priority=1)
 	public void validateHomePageTitle() {
 		String title=homePage.verifyHomePageTitle();
 		System.out.println(driver.getTitle());
-		Assert.assertEquals(title, "Login | Citywide Group");
-		
+		Assert.assertEquals(title, "Citywide Group | Home");
 	}
 	
+	@Test(priority=2)
+	public void CitywideLogoImageTest() {
+		boolean flag= homePage.citywidelogo();
+		Assert.assertTrue(flag);
+	}
 	
 	@AfterMethod
-	public void TearDown() {
+	public void tearDown() {
 		driver.quit();
 	}
+	
+	
+	
+	
+	
+
 }

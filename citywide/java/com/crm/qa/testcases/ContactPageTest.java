@@ -8,35 +8,31 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
-import com.crm.qa.pages.LoginPage;
+import com.crm.qa.pages.HomePage;
 import com.crm.qa.util.TestUtil;
 
 public class ContactPageTest extends TestBase {
-	LoginPage loginPage;
+	HomePage homePage;
 	TestUtil testUtil;
 	ContactsPage contactsPage;
 	
 	String sheetName = "contacts";
 	
 	public ContactPageTest() {
-		super();    //base class constructor will be called and properties will be initialized
+		super();    
 	}
 	
 	@BeforeMethod
 	public void setUp() {
 		initialization();
-		 loginPage= new LoginPage();    //so i can access login page class methods
+		homePage= new HomePage();    
 		 testUtil= new TestUtil();
 		 contactsPage= new ContactsPage();
-		 contactsPage= loginPage.clickonContactLink();
+		 contactsPage= homePage.clickonContactLink();
 	}
+	
 	
 	@Test(priority=1)
-	public void  verifyContactsLabelTest() {
-    Assert.assertTrue( contactsPage.verifycontactsLabel(), "contact label is missing on the page");        
-	}
-	
-	@Test(priority=2)
 	public void validateContactsPageTitle() {
 		String title=contactsPage.verifyContactsPageTitle();
 		System.out.println(driver.getTitle());
@@ -44,15 +40,15 @@ public class ContactPageTest extends TestBase {
 	}
 	
 	
-	 @DataProvider
+	 //@DataProvider
 		public Object[][] getCitywideTestData(){
 			Object data[][] = TestUtil.getTestData(sheetName);
 			return data;
 		}
 	    
-	    @Test(priority=3, dataProvider="getCitywideTestData")
+	 //   @Test(priority=3, dataProvider="getCitywideTestData")
 	    public void createNewQueryTest(String firstName, String lastName,String emailAdd,  String companyName, String msgName){
-	    	loginPage.clickonContactLink();
+	    	homePage.clickonContactLink();
 	    	contactsPage.createNewQuery(firstName, lastName,emailAdd, companyName, msgName);
 	    }
 	

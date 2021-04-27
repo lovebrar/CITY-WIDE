@@ -12,19 +12,19 @@ import com.crm.qa.util.TestUtil;
 
 public class ContactsPage extends TestBase{
 	
-	@FindBy(xpath="//label[contains(text(),'First Name')]")
+	@FindBy(xpath="//input[@id='First-Name']")
 	WebElement firstName;
 	
-	@FindBy(xpath="//label[contains(text(),'Last Name')]")
+	@FindBy(xpath="//input[@id='Last-Name']")
 	WebElement lastName;
 	
-	@FindBy(xpath="//label[contains(text(),'Email Address')]")
+	@FindBy(xpath="//input[@id='email']")
 	WebElement emailAddress;
 	
-	@FindBy(xpath="//label[contains(text(),'Your Company')]")
+	@FindBy(xpath="//input[@id='Company']")
 	WebElement companyName;
 	
-	@FindBy(xpath="//label[contains(text(),'Your Message')]")
+	@FindBy(xpath="//textarea[@id='Message']")
 	WebElement messageyName;
 	
 	@FindBy(xpath="//input[@type='submit']")
@@ -40,9 +40,6 @@ public class ContactsPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public boolean verifycontactsLabel() {
-		return contactsLabel.isDisplayed();
-	}
 	
 	public String verifyContactsPageTitle() {
 		return driver.getTitle();
