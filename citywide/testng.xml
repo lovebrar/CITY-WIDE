@@ -3,8 +3,9 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.crm.qa.testcases.ContactPageTest"/>
       <class name="com.crm.qa.testcases.LoginPageTest"/>
+      <class name="com.crm.qa.testcases.RegisteredPageTest"/>
+      <class name="com.crm.qa.testcases.CreateAccountTest"/>
       <class name="com.crm.qa.testcases.HomePageTest"/>
     </classes>
   </test> <!-- Test -->

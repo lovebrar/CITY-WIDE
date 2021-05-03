@@ -1,106 +1,183 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="2" ignored="0" total="22" passed="20">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23971" started-at="2021-04-27T02:44:51Z" finished-at="2021-04-27T02:45:15Z">
+  <suite name="Suite" duration-ms="620989" started-at="2021-05-03T00:08:48Z" finished-at="2021-05-03T00:19:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23971" started-at="2021-04-27T02:44:51Z" finished-at="2021-04-27T02:45:15Z">
-      <class name="com.crm.qa.testcases.ContactPageTest">
-        <test-method status="FAIL" signature="setUp()[pri:0, instance:com.crm.qa.testcases.ContactPageTest@91161c7]" name="setUp" is-config="true" duration-ms="23837" started-at="2021-04-26T22:44:51Z" finished-at="2021-04-26T22:45:15Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[Element <a class="header-nav-link last outlined" href="/contact-us"> could not be scrolled into view
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-RU11HV8', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15788, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 32d0afea-62f1-43ba-8f9f-bd17905fa69c]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="header-nav-link last outlined" href="/contact-us"> could not be scrolled into view
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-RU11HV8', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15788, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 32d0afea-62f1-43ba-8f9f-bd17905fa69c
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.crm.qa.pages.HomePage.clickonContactLink(HomePage.java:51)
-	at com.crm.qa.testcases.ContactPageTest.setUp(ContactPageTest.java:31)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+    <test name="Test" duration-ms="620989" started-at="2021-05-03T00:08:48Z" finished-at="2021-05-03T00:19:09Z">
+      <class name="com.crm.qa.testcases.HomePageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4883b407]" name="setUp" is-config="true" duration-ms="13076" started-at="2021-05-02T20:10:28Z" finished-at="2021-05-02T20:10:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="SKIP" signature="validateContactsPageTitle()[pri:1, instance:com.crm.qa.testcases.ContactPageTest@91161c7]" name="validateContactsPageTitle" duration-ms="20" started-at="2021-04-26T22:45:15Z" finished-at="2021-04-26T22:45:15Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method status="PASS" signature="validateHomePageTitle()[pri:1, instance:com.crm.qa.testcases.HomePageTest@4883b407]" name="validateHomePageTitle" duration-ms="11" started-at="2021-05-02T20:10:41Z" finished-at="2021-05-02T20:10:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateHomePageTitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4883b407]" name="tearDown" is-config="true" duration-ms="3363" started-at="2021-05-02T20:10:41Z" finished-at="2021-05-02T20:10:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4883b407]" name="setUp" is-config="true" duration-ms="16405" started-at="2021-05-02T20:13:15Z" finished-at="2021-05-02T20:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="YourLogoImageTest()[pri:2, instance:com.crm.qa.testcases.HomePageTest@4883b407]" name="YourLogoImageTest" duration-ms="98" started-at="2021-05-02T20:13:32Z" finished-at="2021-05-02T20:13:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- YourLogoImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcases.HomePageTest@4883b407]" name="tearDown" is-config="true" duration-ms="70858" started-at="2021-05-02T20:13:32Z" finished-at="2021-05-02T20:14:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.crm.qa.testcases.HomePageTest -->
+      <class name="com.crm.qa.testcases.RegisteredPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="22150" started-at="2021-05-02T20:09:37Z" finished-at="2021-05-02T20:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateRegisteredPageTitle()[pri:1, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="validateRegisteredPageTitle" duration-ms="10" started-at="2021-05-02T20:09:59Z" finished-at="2021-05-02T20:09:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisteredPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="5146" started-at="2021-05-02T20:09:59Z" finished-at="2021-05-02T20:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="14493" started-at="2021-05-02T20:12:06Z" finished-at="2021-05-02T20:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LogoImageTest()[pri:2, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="LogoImageTest" duration-ms="228" started-at="2021-05-02T20:12:20Z" finished-at="2021-05-02T20:12:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LogoImageTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2587" started-at="2021-05-02T20:12:20Z" finished-at="2021-05-02T20:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="17804" started-at="2021-05-02T20:15:16Z" finished-at="2021-05-02T20:15:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="RegisteredNameTest()[pri:3, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="RegisteredNameTest" duration-ms="63" started-at="2021-05-02T20:15:33Z" finished-at="2021-05-02T20:15:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteredNameTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2652" started-at="2021-05-02T20:15:33Z" finished-at="2021-05-02T20:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="12901" started-at="2021-05-02T20:15:36Z" finished-at="2021-05-02T20:15:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyPersonalInfoTest()[pri:4, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifyPersonalInfoTest" duration-ms="842" started-at="2021-05-02T20:15:49Z" finished-at="2021-05-02T20:15:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPersonalInfoTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="3973" started-at="2021-05-02T20:15:50Z" finished-at="2021-05-02T20:15:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="14785" started-at="2021-05-02T20:15:54Z" finished-at="2021-05-02T20:16:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifymyAddressTest()[pri:5, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifymyAddressTest" duration-ms="808" started-at="2021-05-02T20:16:09Z" finished-at="2021-05-02T20:16:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifymyAddressTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2633" started-at="2021-05-02T20:16:09Z" finished-at="2021-05-02T20:16:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="15685" started-at="2021-05-02T20:16:12Z" finished-at="2021-05-02T20:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifycreditSlipsTest()[pri:6, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifycreditSlipsTest" duration-ms="744" started-at="2021-05-02T20:16:28Z" finished-at="2021-05-02T20:16:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifycreditSlipsTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="1856" started-at="2021-05-02T20:16:28Z" finished-at="2021-05-02T20:16:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="13088" started-at="2021-05-02T20:16:30Z" finished-at="2021-05-02T20:16:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyOrderHistoryTest()[pri:7, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifyOrderHistoryTest" duration-ms="1400" started-at="2021-05-02T20:16:43Z" finished-at="2021-05-02T20:16:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderHistoryTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2073" started-at="2021-05-02T20:16:45Z" finished-at="2021-05-02T20:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="13206" started-at="2021-05-02T20:16:47Z" finished-at="2021-05-02T20:17:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyWishlistTest()[pri:8, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifyWishlistTest" duration-ms="1120" started-at="2021-05-02T20:17:00Z" finished-at="2021-05-02T20:17:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWishlistTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2172" started-at="2021-05-02T20:17:01Z" finished-at="2021-05-02T20:17:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="12407" started-at="2021-05-02T20:17:03Z" finished-at="2021-05-02T20:17:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyhomeButtonTest()[pri:9, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifyhomeButtonTest" duration-ms="1985" started-at="2021-05-02T20:17:16Z" finished-at="2021-05-02T20:17:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhomeButtonTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2177" started-at="2021-05-02T20:17:18Z" finished-at="2021-05-02T20:17:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="10901" started-at="2021-05-02T20:17:20Z" finished-at="2021-05-02T20:17:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifylogoutButtonTest()[pri:9, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="verifylogoutButtonTest" duration-ms="1739" started-at="2021-05-02T20:17:31Z" finished-at="2021-05-02T20:17:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifylogoutButtonTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2679" started-at="2021-05-02T20:17:33Z" finished-at="2021-05-02T20:17:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="15951" started-at="2021-05-02T20:17:35Z" finished-at="2021-05-02T20:17:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="TshirtButtonTest()[pri:10, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TshirtButtonTest" duration-ms="30484" started-at="2021-05-02T20:17:51Z" finished-at="2021-05-02T20:18:22Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element <a class="header-nav-link last outlined" href="/contact-us"> could not be scrolled into view
+              <![CDATA[Unable to locate element: //li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-RU11HV8', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15788, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 32d0afea-62f1-43ba-8f9f-bd17905fa69c]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 4896, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cd1d0a35-9187-4d1c-9e19-feac1f12ff89
+*** Element info: {Using=xpath, value=//li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a class="header-nav-link last outlined" href="/contact-us"> could not be scrolled into view
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'DESKTOP-RU11HV8', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 15788, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 32d0afea-62f1-43ba-8f9f-bd17905fa69c
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 4896, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cd1d0a35-9187-4d1c-9e19-feac1f12ff89
+*** Element info: {Using=xpath, value=//li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -111,31 +188,27 @@ Session ID: 32d0afea-62f1-43ba-8f9f-bd17905fa69c
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:403)
-	at com.sun.proxy.$Proxy12.click(Unknown Source)
-	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:416)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy11.click(Unknown Source)
-	at com.crm.qa.pages.HomePage.clickonContactLink(HomePage.java:51)
-	at com.crm.qa.testcases.ContactPageTest.setUp(ContactPageTest.java:31)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at com.crm.qa.pages.RegisteredPage.tShirt(RegisteredPage.java:130)
+	at com.crm.qa.testcases.RegisteredPageTest.TshirtButtonTest(RegisteredPageTest.java:95)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:523)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:224)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:599)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
 	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
@@ -157,11 +230,270 @@ Session ID: 32d0afea-62f1-43ba-8f9f-bd17905fa69c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateContactsPageTitle -->
-      </class> <!-- com.crm.qa.testcases.ContactPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- TshirtButtonTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2436" started-at="2021-05-02T20:18:22Z" finished-at="2021-05-02T20:18:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="setUp" is-config="true" duration-ms="12256" started-at="2021-05-02T20:18:24Z" finished-at="2021-05-02T20:18:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="WomenButtonTest()[pri:11, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="WomenButtonTest" duration-ms="30176" started-at="2021-05-02T20:18:36Z" finished-at="2021-05-02T20:19:07Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-RU11HV8', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6312, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 489e043f-6603-4c45-854f-96f984d86244
+*** Element info: {Using=xpath, value=//li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-RU11HV8', ip: '192.168.0.24', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 88.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210415204500, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 6312, moz:profile: C:\Users\love brar\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 489e043f-6603-4c45-854f-96f984d86244
+*** Element info: {Using=xpath, value=//li[@class='sfHover']//a[@class='sf-with-ul'][contains(text(),'Dresses')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at sun.reflect.GeneratedMethodAccessor5.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.isDisplayed(Unknown Source)
+	at com.crm.qa.pages.RegisteredPage.tShirt(RegisteredPage.java:130)
+	at com.crm.qa.testcases.RegisteredPageTest.WomenButtonTest(RegisteredPageTest.java:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WomenButtonTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.RegisteredPageTest@6093dd95]" name="TearDown" is-config="true" duration-ms="2126" started-at="2021-05-02T20:19:07Z" finished-at="2021-05-02T20:19:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.crm.qa.testcases.RegisteredPageTest -->
+      <class name="com.crm.qa.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="42185" started-at="2021-05-02T20:08:48Z" finished-at="2021-05-02T20:09:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateLoginPageTitle()[pri:1, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="validateLoginPageTitle" duration-ms="2639" started-at="2021-05-02T20:09:30Z" finished-at="2021-05-02T20:09:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="TearDown" is-config="true" duration-ms="4375" started-at="2021-05-02T20:09:33Z" finished-at="2021-05-02T20:09:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="14595" started-at="2021-05-02T20:10:47Z" finished-at="2021-05-02T20:11:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateAccount(java.lang.String)[pri:2, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="validateCreateAccount" duration-ms="2440" started-at="2021-05-02T20:11:02Z" data-provider="getMyStoreTestData" finished-at="2021-05-02T20:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz123456@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateAccount -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="TearDown" is-config="true" duration-ms="2906" started-at="2021-05-02T20:11:04Z" finished-at="2021-05-02T20:11:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="12024" started-at="2021-05-02T20:11:07Z" finished-at="2021-05-02T20:11:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateAccount(java.lang.String)[pri:2, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="validateCreateAccount" duration-ms="2012" started-at="2021-05-02T20:11:19Z" data-provider="getMyStoreTestData" finished-at="2021-05-02T20:11:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[12345.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateAccount -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="TearDown" is-config="true" duration-ms="3073" started-at="2021-05-02T20:11:21Z" finished-at="2021-05-02T20:11:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="13493" started-at="2021-05-02T20:11:24Z" finished-at="2021-05-02T20:11:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateAccount(java.lang.String)[pri:2, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="validateCreateAccount" duration-ms="1650" started-at="2021-05-02T20:11:38Z" data-provider="getMyStoreTestData" finished-at="2021-05-02T20:11:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateAccount -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="TearDown" is-config="true" duration-ms="4237" started-at="2021-05-02T20:11:40Z" finished-at="2021-05-02T20:11:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="16636" started-at="2021-05-02T20:11:44Z" finished-at="2021-05-02T20:12:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateAccount(java.lang.String)[pri:2, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="validateCreateAccount" duration-ms="2507" started-at="2021-05-02T20:12:00Z" data-provider="getMyStoreTestData" finished-at="2021-05-02T20:12:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abcd12345@yahoo.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateAccount -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="TearDown" is-config="true" duration-ms="2613" started-at="2021-05-02T20:12:03Z" finished-at="2021-05-02T20:12:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="26054" started-at="2021-05-02T20:14:43Z" finished-at="2021-05-02T20:15:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateRegisteredPage()[pri:3, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="validateRegisteredPage" duration-ms="3327" started-at="2021-05-02T20:15:09Z" finished-at="2021-05-02T20:15:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisteredPage -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.LoginPageTest@6d4b1c02]" name="TearDown" is-config="true" duration-ms="3380" started-at="2021-05-02T20:15:12Z" finished-at="2021-05-02T20:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.crm.qa.testcases.LoginPageTest -->
+      <class name="com.crm.qa.testcases.CreateAccountTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CreateAccountTest@5622fdf]" name="setUp" is-config="true" duration-ms="19218" started-at="2021-05-02T20:10:04Z" finished-at="2021-05-02T20:10:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="validateCreateAccountPageTitle()[pri:1, instance:com.crm.qa.testcases.CreateAccountTest@5622fdf]" name="validateCreateAccountPageTitle" duration-ms="8" started-at="2021-05-02T20:10:23Z" finished-at="2021-05-02T20:10:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateAccountPageTitle -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.CreateAccountTest@5622fdf]" name="TearDown" is-config="true" duration-ms="4091" started-at="2021-05-02T20:10:24Z" finished-at="2021-05-02T20:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcases.CreateAccountTest@5622fdf]" name="setUp" is-config="true" duration-ms="13539" started-at="2021-05-02T20:12:23Z" finished-at="2021-05-02T20:12:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="createNewContactTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.crm.qa.testcases.CreateAccountTest@5622fdf]" name="createNewContactTest" duration-ms="35729" started-at="2021-05-02T20:12:36Z" data-provider="getMyStoreTestData" finished-at="2021-05-02T20:13:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[james]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[snow]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Abcd123#]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[amazon]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[634 huron street]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[atlanta]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10023.0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[6.47877985E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewContactTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.crm.qa.testcases.CreateAccountTest@5622fdf]" name="TearDown" is-config="true" duration-ms="3195" started-at="2021-05-02T20:13:12Z" finished-at="2021-05-02T20:13:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- com.crm.qa.testcases.CreateAccountTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

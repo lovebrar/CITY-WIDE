@@ -1,8 +1,6 @@
 package com.crm.qa.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -10,52 +8,43 @@ import com.crm.qa.base.TestBase;
 
 public class HomePage extends TestBase {
  
-	
-	@FindBy(xpath="//a[@href='/citylink']  ")      
-	WebElement Citylink;
-	
-	@FindBy(xpath="//a[@href='/automatics']")      
-	WebElement Automatics;
-	
-	@FindBy(xpath="//a[contains(text(),'Security')]")
-	WebElement Security;
-	
-	@FindBy(xpath="//a[contains(text(),'Contact Us')]")
+	//***************************WEBOBJECTS**************************************
+	@FindBy(xpath="//span[@class='shop-phone'] ")      
+	WebElement phoneNumber;
+	@FindBy(xpath="//div[@id='contact-link']//a[contains(text(),'Contact us')]")
 	WebElement contactUs;
-
-	@FindBy(xpath="//img[@class='image']")
-	WebElement citywidelogo;
-	
-	@FindBy(xpath="//a[contains(text(),'Login')]")
-	WebElement login;
-
+	@FindBy(xpath="//img[@class='logo img-responsive']")
+	WebElement yourLogo;
+	@FindBy(xpath="//a[@class='login']")
+	WebElement signIn;
+	@FindBy(xpath="//a[contains(text(),'My orders')]")
+	WebElement myOrders;
+	@FindBy(xpath="//input[@id='search_query_top']")      
+	WebElement searchButton;
+	@FindBy(xpath="//a[contains(text(),'About us')]")
+	WebElement aboutUs;
+	//****************************INITIALISE WEBOBJECTS********************************
 	public HomePage() {
 		PageFactory.initElements(driver, this);  
 	}
 
-
+	//METHOD:
 	public String verifyHomePageTitle() {
 		return driver.getTitle();
 	}
 	
-	public boolean citywidelogo() {
-		return citywidelogo.isDisplayed();
+	public boolean myStorelogo() {
+		return yourLogo.isDisplayed();
 	}
 	
-	public LoginPage clickonLoginLink() {
-		login.click();
+	public LoginPage clickonSigninLink() {
+		signIn.click();
 		return new LoginPage();    
 	}
 	
-	public ContactsPage clickonContactLink() {
+	public ContactsPage clickonContactsLink() {
 		contactUs.click();
 		return new ContactsPage();    
 	}
-	
-	public SecurityPage clickonSecurityLink() {
-		Security.click();
-		return new SecurityPage();     
-	}
-	
 	
 }
